@@ -1,10 +1,5 @@
-import { MarketingPageShell } from "@/components/marketing/shared/marketing-page-shell"
+import { SolutionsPageContent } from "@/components/marketing/solutions/solutions-page"
 
 export default function SolutionsPage() {
-  return (
-    <MarketingPageShell
-      title="Solutions"
-      description="See how ShepherdOS can support church leaders, ministry teams, and member care initiatives in one ecosystem."
-    />
-  )
+  return <SolutionsPageContent />
 }
