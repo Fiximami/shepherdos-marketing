@@ -1,10 +1,5 @@
-import { MarketingPageShell } from "@/components/marketing/shared/marketing-page-shell"
+import { ContactPageContent } from "@/components/marketing/contact/contact-page"
 
 export default function ContactPage() {
-  return (
-    <MarketingPageShell
-      title="Contact"
-      description="Connect with the ShepherdOS team for partnership questions, ministry fit, and implementation guidance."
-    />
-  )
+  return <ContactPageContent />
 }
