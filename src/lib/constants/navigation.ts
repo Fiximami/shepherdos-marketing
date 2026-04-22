@@ -14,5 +14,5 @@ export const marketingNavigation: MarketingNavItem[] = [
 
 export const marketingCtaNavigation: MarketingNavItem[] = [
   { label: "Book Demo", href: "/book-demo" },
-  { label: "Start Free Trial", href: "/start-free-trial" },
+  { label: "Start Free Trial", href: "/start-trial" },
 ]

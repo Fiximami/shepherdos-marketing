@@ -27,7 +27,7 @@ export function FeaturesCtaSection() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/start-free-trial">Start Free Trial</Link>
+                <Link href="/start-trial">Start Free Trial</Link>
               </Button>
             </div>
           </div>

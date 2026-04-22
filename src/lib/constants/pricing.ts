@@ -31,7 +31,7 @@ export const pricingTiers: PricingTier[] = [
     monthlyLabel: "$79/month",
     annualLabel: "$67/month billed annually",
     ctaLabel: "Start Free Trial",
-    ctaHref: "/start-free-trial",
+    ctaHref: "/start-trial",
     features: [
       "Core church management workspace",
       "Member and household records",
