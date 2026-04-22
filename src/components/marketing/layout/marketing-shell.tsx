@@ -1,5 +1,5 @@
-import { MarketingFooter } from "@/components/marketing/layout/marketing-footer"
-import { MarketingNavbar } from "@/components/marketing/layout/marketing-navbar"
+import { MarketingFooter } from "@/components/marketing/layout/footer"
+import { MarketingNavbar } from "@/components/marketing/layout/navbar"
 
 type MarketingShellProps = {
   children: React.ReactNode
