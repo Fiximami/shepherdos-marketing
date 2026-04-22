@@ -1,5 +1,5 @@
-import { HomeHeroPlaceholder } from "@/components/marketing/home/home-hero-placeholder"
+import { MarketingHomePage } from "@/components/marketing/home/home-page"
 
 export default function HomePage() {
-  return <HomeHeroPlaceholder />
+  return <MarketingHomePage />
 }
