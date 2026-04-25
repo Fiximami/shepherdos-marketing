@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 type ContactFormFields = {
   name: string
@@ -84,14 +85,14 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact form"
           title="Tell us about your church and what you are looking for."
           description="Share your context so we can provide practical guidance and relevant next steps."
         />
-        <Card className="mt-10 rounded-3xl border-border/70 bg-card/95 shadow-sm">
+        <Card className="mt-10 rounded-3xl border-white/10 bg-card/90 shadow-lg shadow-black/25 backdrop-blur-md">
           <CardHeader>
             <CardTitle className="text-xl">Start the conversation</CardTitle>
           </CardHeader>
@@ -207,6 +208,6 @@ export function ContactFormSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

@@ -9,8 +9,7 @@ import { WhyShepherdosSection } from "@/components/marketing/home/why-shepherdos
 
 export function MarketingHomePage() {
   return (
-    <div className="relative">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,rgba(15,23,42,0.02)_25%,transparent_55%)]" />
+    <div>
       <HeroSection />
       <ProblemSection />
       <FeaturesPreviewSection />

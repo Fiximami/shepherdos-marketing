@@ -3,6 +3,7 @@ import { AlertCircle, Clock3, FileWarning, HandHeart, LayoutGrid, Users } from "
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { homePainPoints } from "@/components/marketing/home/content"
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 const painPointIcons = [
   LayoutGrid,
@@ -15,7 +16,7 @@ const painPointIcons = [
 
 export function ProblemSection() {
   return (
-    <section className="bg-muted/30 py-18 sm:py-22">
+    <SectionWrapper variant="band" density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="The challenge"
@@ -46,6 +47,6 @@ export function ProblemSection() {
           })}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

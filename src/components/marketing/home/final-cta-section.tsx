@@ -2,13 +2,14 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 export function FinalCtaSection() {
   return (
-    <section className="pb-18 pt-8 sm:pb-22">
+    <SectionWrapper density="cta-end">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl border border-border/70 bg-card px-6 py-10 shadow-xl sm:px-10 sm:py-12">
-          <div className="absolute inset-x-0 top-0 h-36 bg-[radial-gradient(ellipse_at_top,rgba(234,179,8,0.15),transparent_62%)]" />
+        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 px-6 py-10 shadow-xl shadow-black/30 backdrop-blur-md sm:px-10 sm:py-12">
+          <div className="absolute inset-x-0 top-0 h-36 bg-[radial-gradient(ellipse_at_top,oklch(0.72_0.12_84/0.2),transparent_62%)]" />
           <div className="relative">
             <p className="text-sm font-medium tracking-wide text-primary">
               Ready to lead with greater clarity?
@@ -33,6 +34,6 @@ export function FinalCtaSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

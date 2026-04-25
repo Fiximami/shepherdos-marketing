@@ -3,10 +3,11 @@ import { MonitorSmartphone, Smartphone, TabletSmartphone } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 export function PlatformPreviewSection() {
   return (
-    <section className="bg-muted/30 py-18 sm:py-22">
+    <SectionWrapper variant="band" density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Platform preview"
@@ -79,6 +80,6 @@ export function PlatformPreviewSection() {
           </Card>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

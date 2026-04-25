@@ -5,11 +5,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { pricingFaqItems } from "@/lib/constants/pricing"
 
 export function FaqSnippetSection() {
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <SectionWrapper variant="band">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="FAQ snippet"
@@ -31,6 +32,6 @@ export function FaqSnippetSection() {
           </Accordion>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

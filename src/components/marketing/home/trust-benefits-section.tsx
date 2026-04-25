@@ -3,12 +3,13 @@ import { LockKeyhole, ShieldCheck, Target, UserRoundCheck } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { homeTrustItems } from "@/components/marketing/home/content"
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 const trustIcons = [ShieldCheck, Target, LockKeyhole, UserRoundCheck]
 
 export function TrustBenefitsSection() {
   return (
-    <section className="bg-muted/30 py-18 sm:py-22">
+    <SectionWrapper variant="band" density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Trust and benefits"
@@ -39,6 +40,6 @@ export function TrustBenefitsSection() {
           })}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

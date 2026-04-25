@@ -27,14 +27,14 @@ export function MarketingNavbar() {
   const [bookDemoLink, startTrialLink] = marketingCtaNavigation
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between gap-4 px-5 md:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex items-center gap-3 rounded-xl p-1 transition hover:bg-muted/70"
+          className="flex items-center gap-3 rounded-xl p-1 transition hover:bg-white/[0.06]"
           aria-label="ShepherdOS home"
         >
-          <div className="relative h-11 w-11 overflow-hidden rounded-xl bg-background shadow-sm ring-1 ring-border/70">
+          <div className="relative h-11 w-11 overflow-hidden rounded-xl bg-white/[0.06] shadow-md shadow-black/30 ring-1 ring-white/15">
             <Image
               src="/shepherdos-logo.png"
               alt="ShepherdOS logo"
@@ -60,8 +60,8 @@ export function MarketingNavbar() {
                 className={cn(
                   "rounded-full px-4 py-2 text-sm font-medium transition-colors",
                   active
-                    ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:bg-muted/80 hover:text-foreground"
+                    ? "bg-primary/15 text-primary shadow-sm shadow-primary/10"
+                    : "text-muted-foreground hover:bg-white/[0.08] hover:text-foreground"
                 )}
                 aria-current={active ? "page" : undefined}
               >
@@ -89,9 +89,9 @@ export function MarketingNavbar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[86%] max-w-sm border-l border-border/70 bg-background p-0"
+              className="w-[86%] max-w-sm border-l border-white/10 bg-background/95 p-0 backdrop-blur-xl"
             >
-              <SheetHeader className="border-b border-border/70 px-5 py-4">
+              <SheetHeader className="border-b border-white/10 px-5 py-4">
                 <SheetTitle className="text-left">ShepherdOS</SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-1 p-4">
@@ -104,8 +104,8 @@ export function MarketingNavbar() {
                         className={cn(
                           "rounded-xl px-4 py-3 text-sm font-medium transition-colors",
                           active
-                            ? "bg-primary/10 text-primary"
-                            : "text-foreground/90 hover:bg-muted"
+                            ? "bg-primary/15 text-primary"
+                            : "text-foreground/90 hover:bg-white/[0.08]"
                         )}
                         aria-current={active ? "page" : undefined}
                       >
@@ -115,7 +115,7 @@ export function MarketingNavbar() {
                   )
                 })}
               </div>
-              <div className="mt-auto space-y-2 border-t border-border/70 p-4">
+              <div className="mt-auto space-y-2 border-t border-white/10 p-4">
                 <SheetClose asChild>
                   <Button variant="outline" className="w-full" asChild>
                     <Link href={bookDemoLink.href}>{bookDemoLink.label}</Link>

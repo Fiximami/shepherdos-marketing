@@ -10,6 +10,7 @@ import {
 import { homeFeatures } from "@/components/marketing/home/content"
 import { FeaturePreviewCard } from "@/components/marketing/home/feature-preview-card"
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 const featureIcons = [
   UsersRound,
@@ -22,7 +23,7 @@ const featureIcons = [
 
 export function FeaturesPreviewSection() {
   return (
-    <section className="py-18 sm:py-22">
+    <SectionWrapper density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Core capabilities"
@@ -40,6 +41,6 @@ export function FeaturesPreviewSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

@@ -3,11 +3,12 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-x-0 top-0 -z-10 h-80 bg-[radial-gradient(ellipse_at_top,rgba(46,103,255,0.14),transparent_62%)]" />
+    <SectionWrapper variant="hero" density="none">
+      <div className="absolute inset-x-0 top-0 -z-10 h-80 bg-[radial-gradient(ellipse_at_top,oklch(0.55_0.14_264/0.25),transparent_62%)]" />
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-16 md:px-6 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-24">
         <div>
           <p className="text-sm font-medium tracking-wide text-primary">
@@ -88,6 +89,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

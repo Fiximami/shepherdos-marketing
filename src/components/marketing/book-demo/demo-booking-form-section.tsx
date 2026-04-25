@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 type DemoFormFields = {
   fullName: string
@@ -121,14 +122,14 @@ export function DemoBookingFormSection() {
   }
 
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Demo booking form"
           title="Share your details and preferred schedule."
           description="This frontend-only form captures your request so we can coordinate the right demo conversation."
         />
-        <Card className="mt-10 rounded-3xl border-border/70 bg-card/95 shadow-sm">
+        <Card className="mt-10 rounded-3xl border-white/10 bg-card/90 shadow-lg shadow-black/25 backdrop-blur-md">
           <CardHeader>
             <CardTitle className="text-xl">Request your live demo</CardTitle>
           </CardHeader>
@@ -339,6 +340,6 @@ export function DemoBookingFormSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

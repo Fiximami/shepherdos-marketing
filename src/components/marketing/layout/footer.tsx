@@ -14,12 +14,12 @@ export function MarketingFooter() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border/70 bg-muted/20">
+    <footer className="border-t border-white/10 bg-black/20 backdrop-blur-md">
       <div className="mx-auto w-full max-w-6xl px-5 py-12 md:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3">
-              <div className="relative h-11 w-11 overflow-hidden rounded-xl bg-background shadow-sm ring-1 ring-border/70">
+              <div className="relative h-11 w-11 overflow-hidden rounded-xl bg-white/[0.06] shadow-md shadow-black/25 ring-1 ring-white/12">
                 <Image
                   src="/shepherdos-logo.png"
                   alt="ShepherdOS logo"

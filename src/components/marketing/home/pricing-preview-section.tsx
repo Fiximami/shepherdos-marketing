@@ -2,13 +2,14 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { pricingTiers } from "@/lib/constants/pricing"
 
 export function PricingPreviewSection() {
   return (
-    <section className="py-18 sm:py-22">
+    <SectionWrapper density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
@@ -44,6 +45,6 @@ export function PricingPreviewSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

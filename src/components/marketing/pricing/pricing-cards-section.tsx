@@ -4,11 +4,12 @@ import { CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { pricingTiers } from "@/lib/constants/pricing"
 
 export function PricingCardsSection() {
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <SectionWrapper variant="band">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Pricing tiers"
@@ -54,6 +55,6 @@ export function PricingCardsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

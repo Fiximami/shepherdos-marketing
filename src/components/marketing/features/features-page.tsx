@@ -6,8 +6,7 @@ import { RoleBasedCapabilitySection } from "@/components/marketing/features/role
 
 export function FeaturesPageContent() {
   return (
-    <div className="relative">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,rgba(30,64,175,0.03)_26%,transparent_62%)]" />
+    <div>
       <FeaturesPageHeroSection />
       <FeaturesGridSection />
       <RoleBasedCapabilitySection />
