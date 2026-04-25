@@ -20,34 +20,34 @@ export type HomeTrustItem = {
 
 export const homePainPoints: HomePainPoint[] = [
   {
-    title: "Scattered ministry data",
+    title: "Scattered member records",
     description:
-      "Attendance, follow-up, finances, and communication live across disconnected tools that do not speak to each other.",
+      "Profiles, households, and ministry notes drift across spreadsheets, inboxes, and older tools—with no single, gentle place to see the whole story.",
   },
   {
-    title: "Follow-up is inconsistent",
+    title: "Weak follow-up systems",
     description:
-      "First-time guests and prayer requests can slip through the cracks when teams rely on manual handoffs.",
+      "Guests, prayer needs, and pastoral touches depend on memory and handoffs. What begins with good intent can quietly thin out over busy weeks.",
   },
   {
-    title: "Limited financial clarity",
+    title: "Manual attendance tracking",
     description:
-      "Leaders need accountable reports, but reconciling multiple systems can consume valuable ministry time.",
+      "Sign-in sheets and one-off lists make it harder to notice patterns, celebrate faithfulness, or spot who might need a caring check-in.",
   },
   {
-    title: "Volunteer coordination is hard",
+    title: "Financial opacity",
     description:
-      "Serving schedules and role assignments become difficult to manage as church teams grow.",
+      "Giving, budgets, and reports often sit in different corners. Leaders wait longer for the numbers that help them steward with confidence.",
   },
   {
-    title: "Leadership lacks real-time insight",
+    title: "Disconnected communication",
     description:
-      "Big ministry decisions are often made with delayed or incomplete information.",
+      "Email, group chats, and bulletins rarely connect. Teams and families hear overlapping or uneven messages instead of one steady rhythm.",
   },
   {
-    title: "Member experience feels fragmented",
+    title: "Lack of growth insights",
     description:
-      "Church members expect simplicity and care, but digital touchpoints can feel confusing or outdated.",
+      "Without a shared view of engagement and health, it is easier to guess than to sense where the church is thriving, plateauing, or hurting.",
   },
 ]
 
