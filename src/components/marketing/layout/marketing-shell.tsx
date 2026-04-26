@@ -7,7 +7,7 @@ type MarketingShellProps = {
 
 export function MarketingShell({ children }: MarketingShellProps) {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-background via-background to-muted/30">
+    <div className="marketing-canvas flex min-h-screen flex-col">
       <MarketingNavbar />
       <main className="flex-1">{children}</main>
       <MarketingFooter />

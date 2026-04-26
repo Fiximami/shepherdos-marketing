@@ -2,11 +2,12 @@ import { Lightbulb, Workflow } from "lucide-react"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { whyShepherdosExists } from "@/lib/constants/about"
 
 export function WhyExistsSection() {
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why ShepherdOS exists"
@@ -36,6 +37,6 @@ export function WhyExistsSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

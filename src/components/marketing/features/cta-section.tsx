@@ -2,13 +2,14 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 export function FeaturesCtaSection() {
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl border border-border/70 bg-card/95 px-6 py-10 shadow-lg sm:px-10">
-          <div className="absolute inset-x-0 top-0 h-36 bg-[radial-gradient(ellipse_at_top,rgba(234,179,8,0.15),transparent_66%)]" />
+        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/90 px-6 py-10 shadow-lg shadow-black/30 backdrop-blur-md sm:px-10">
+          <div className="absolute inset-x-0 top-0 h-36 bg-[radial-gradient(ellipse_at_top,oklch(0.72_0.12_84/0.18),transparent_66%)]" />
           <div className="relative">
             <p className="text-sm font-medium tracking-wide text-primary">
               Ready to see ShepherdOS in action?
@@ -33,6 +34,6 @@ export function FeaturesCtaSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

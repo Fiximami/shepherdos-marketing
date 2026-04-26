@@ -2,10 +2,11 @@ import { CheckCircle2 } from "lucide-react"
 
 import { homeAdvantages } from "@/components/marketing/home/content"
 import { SectionHeading } from "@/components/marketing/home/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 export function WhyShepherdosSection() {
   return (
-    <section className="py-18 sm:py-22">
+    <SectionWrapper density="relaxed">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-start">
           <SectionHeading
@@ -35,6 +36,6 @@ export function WhyShepherdosSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

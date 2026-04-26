@@ -2,11 +2,12 @@ import { CheckCircle2 } from "lucide-react"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { trialBenefits } from "@/lib/constants/start-trial"
 
 export function TrialBenefitsSection() {
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <SectionWrapper variant="band">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Trial benefits"
@@ -15,10 +16,7 @@ export function TrialBenefitsSection() {
         />
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {trialBenefits.map((benefit) => (
-            <Card
-              key={benefit.title}
-              className="rounded-2xl border-border/70 bg-card/95 shadow-sm"
-            >
+            <Card key={benefit.title}>
               <CardHeader>
                 <p className="flex items-center gap-2 text-sm font-medium text-primary">
                   <CheckCircle2 className="size-4" />
@@ -35,6 +33,6 @@ export function TrialBenefitsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

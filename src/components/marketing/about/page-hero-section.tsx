@@ -1,12 +1,13 @@
 import { Cross, HeartHandshake, ShieldCheck } from "lucide-react"
 
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { aboutHero } from "@/lib/constants/about"
 
 export function AboutPageHeroSection() {
   return (
-    <section className="relative overflow-hidden py-16 sm:py-20">
-      <div className="absolute inset-x-0 top-0 -z-10 h-80 bg-[radial-gradient(ellipse_at_top,rgba(30,64,175,0.14),transparent_66%)]" />
+    <SectionWrapper variant="hero">
+      <div className="absolute inset-x-0 top-0 -z-10 h-80 bg-[radial-gradient(ellipse_at_top,oklch(0.55_0.14_264/0.22),transparent_66%)]" />
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow={aboutHero.eyebrow}
@@ -43,6 +44,6 @@ export function AboutPageHeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

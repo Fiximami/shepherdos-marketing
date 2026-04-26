@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 
 type TrialFormFields = {
   churchName: string
@@ -114,14 +115,14 @@ export function TrialSignupFormSection() {
   }
 
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Trial signup form"
           title="Set up your trial request in one structured step."
           description="This frontend-only form captures your setup details and is ready for backend integration in the next phase."
         />
-        <Card className="mt-10 rounded-3xl border-border/70 bg-card/95 shadow-sm">
+        <Card className="mt-10 rounded-3xl border-white/10 bg-card/90 shadow-lg shadow-black/25 backdrop-blur-md">
           <CardHeader>
             <CardTitle className="text-xl">Create your trial request</CardTitle>
           </CardHeader>
@@ -249,7 +250,7 @@ export function TrialSignupFormSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
 

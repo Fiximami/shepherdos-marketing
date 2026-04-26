@@ -2,6 +2,7 @@ import { MonitorSmartphone, Smartphone } from "lucide-react"
 
 import { CapabilityCard } from "@/components/marketing/shared/capability-card"
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { platformCapabilities } from "@/lib/constants/features"
 
 const platformIcons = {
@@ -11,7 +12,7 @@ const platformIcons = {
 
 export function PlatformCapabilitiesSection() {
   return (
-    <section className="bg-muted/30 py-16 sm:py-20">
+    <SectionWrapper variant="band">
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Platform capabilities"
@@ -34,6 +35,6 @@ export function PlatformCapabilitiesSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

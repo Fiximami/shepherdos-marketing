@@ -1,9 +1,10 @@
 import { SectionHeading } from "@/components/marketing/shared/section-heading"
+import { SectionWrapper } from "@/components/marketing/shared/section-wrapper"
 import { planComparisonRows } from "@/lib/constants/pricing"
 
 export function PlanComparisonSection() {
   return (
-    <section className="py-16 sm:py-20">
+    <SectionWrapper>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Plan comparison"
@@ -62,6 +63,6 @@ export function PlanComparisonSection() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
